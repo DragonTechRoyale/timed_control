@@ -134,6 +134,7 @@ def main():
     setArgs()
 
     atomac.launchAppByBundleId(BundleId)
+    time.sleep(5)
     SelfControl = atomac.getAppRefByBundleId(BundleId)
     window = SelfControl.windows()[0]
     items = SelfControl.AXMainWindow.AXChildrenInNavigationOrder
