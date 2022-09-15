@@ -139,7 +139,7 @@ def main():
     items = SelfControl.AXMainWindow.AXChildrenInNavigationOrder
 
     while True:
-        time.sleep(1)
+        time.sleep(59)
         
         hoursMinutes = timeToInt(startTime)
         startHour = int(hoursMinutes[0])
@@ -159,7 +159,8 @@ def main():
             if totalMinutes == -1:
                 failure()
             setBlocker(items, totalMinutes)
-            print("Sleeping for 1m")
+            if isDebug:
+                print("Sleeping for 1m")
             time.sleep(60)
 
 
