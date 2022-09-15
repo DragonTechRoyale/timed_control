@@ -1,5 +1,5 @@
 # Timed Control
-Automation script for @SelfControl app so you can run it on a desired hour 
+Automation script for @SelfControlApp app so you can run it on a desired hour 
 
 # Installation
 ```bash
